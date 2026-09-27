@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="aMd85pZ_E06Wp6GO-uav">
+    <mxGraphModel dx="1952" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Cliente &amp;lt;abstract&amp;gt;" vertex="1">
+          <mxGeometry height="200" width="140" x="70" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-2" parent="KY0p_Os2XiBaTdUtuvuV-1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="- nome: String&lt;div&gt;- email: String&lt;/div&gt;&lt;div&gt;- telefone: String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- documento: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-3" parent="KY0p_Os2XiBaTdUtuvuV-1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="+getNome() : String&lt;div&gt;+getEmail() : String&lt;/div&gt;&lt;div&gt;+getTelefone() : String&lt;/div&gt;&lt;div&gt;+getDocumento : String&lt;/div&gt;&lt;div&gt;+limiteDeLocacoes(): int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="140" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-11" edge="1" parent="1" source="KY0p_Os2XiBaTdUtuvuV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="KY0p_Os2XiBaTdUtuvuV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="ClientePF" vertex="1">
+          <mxGeometry height="80" width="160" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-5" parent="KY0p_Os2XiBaTdUtuvuV-4" style="rounded=0;whiteSpace=wrap;html=1;" value="+ limiteDeLocacoes() : int" vertex="1">
+          <mxGeometry height="60" width="160" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-6" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="ClientePJ" vertex="1">
+          <mxGeometry height="80" width="160" x="280" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-7" parent="KY0p_Os2XiBaTdUtuvuV-6" style="rounded=0;whiteSpace=wrap;html=1;" value="+ limiteDeLocacoes() : int" vertex="1">
+          <mxGeometry height="60" width="160" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-12" edge="1" parent="1" source="KY0p_Os2XiBaTdUtuvuV-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" target="KY0p_Os2XiBaTdUtuvuV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-13" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Veiculo" vertex="1">
+          <mxGeometry height="200" width="140" x="70" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-14" parent="KY0p_Os2XiBaTdUtuvuV-13" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="- placa : String&lt;div&gt;- modelo : String&lt;/div&gt;&lt;div&gt;- valorDiaria: double&lt;/div&gt;&lt;div&gt;- disponivel: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-15" parent="KY0p_Os2XiBaTdUtuvuV-13" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="+ alugar()&lt;div&gt;+ devolver()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-18" edge="1" parent="1" source="KY0p_Os2XiBaTdUtuvuV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="KY0p_Os2XiBaTdUtuvuV-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-16" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="CategoriaVeiculo" vertex="1">
+          <mxGeometry height="120" width="140" x="70" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-17" parent="KY0p_Os2XiBaTdUtuvuV-16" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="- nome : String&lt;div&gt;- veiculos : List&lt;/div&gt;&lt;div&gt;+ adicionarVeiculo()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="140" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-21" edge="1" parent="1" source="KY0p_Os2XiBaTdUtuvuV-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="KY0p_Os2XiBaTdUtuvuV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-22" edge="1" parent="1" source="KY0p_Os2XiBaTdUtuvuV-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="KY0p_Os2XiBaTdUtuvuV-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-19" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Locacao" vertex="1">
+          <mxGeometry height="150" width="140" x="-180" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KY0p_Os2XiBaTdUtuvuV-23" parent="KY0p_Os2XiBaTdUtuvuV-19" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="- cliente : Cliente&lt;div&gt;- veiculo: Veiculo&lt;/div&gt;&lt;div&gt;- dataRetirada : Date&lt;/div&gt;&lt;div&gt;- dataDevolucao : Date&lt;/div&gt;&lt;div&gt;- valorTotal : double&lt;/div&gt;&lt;div&gt;+ devolver()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="140" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
